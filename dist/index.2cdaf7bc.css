@@ -1,0 +1,99 @@
+body {
+  background-image: url("Wallpaper.d36e8798.jpg");
+  background-size: cover;
+  font-family: MADE TOMMY, sans-serif;
+}
+
+h1 {
+  color: #49ceff;
+  text-align: center;
+  font-family: Paytone One, sans-serif;
+  font-size: 3.5em;
+}
+
+h2 {
+  color: #49ceff;
+  text-align: left;
+  font-family: MADE TOMMY, sans-serif;
+  font-size: 2em;
+}
+
+canvas {
+  border: 2px solid #fff;
+}
+
+.divBox {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin: auto;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+tr, td {
+  text-align: center;
+  padding: 15px;
+  font-family: MADE TOMMY, sans-serif;
+  font-size: 20px;
+}
+
+.offcanvas {
+  --bs-offcanvas-height: 60vh;
+  font-family: MADE Tommy Soft, sans-serif;
+  font-size: 15px;
+}
+
+table tbody tr td {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.progress {
+  --progress-font-size: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.font {
+  text-align: center;
+  font-family: MADE TOMMY, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.modal {
+  font-family: MADE Tommy Soft, sans-serif;
+  font-size: 15px;
+}
+
+.float {
+  z-index: 3;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card {
+  z-index: 1;
+  background: #212529b3;
+}
+
+.table-custom {
+  background-color: #21252900;
+}
+
+#table {
+  --background-color: #21252900;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

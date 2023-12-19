@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Icona per il browser -->
-  <link rel="icon" href="/favicon.f5a9ce84.ico" type="image/x-icon">
+  <link rel="icon" href="Image/favicon.ico" type="image/x-icon">
 
   <!-- Icona per altri browser -->
-  <link rel="icon" href="/favicon.f5a9ce84.ico" type="image/png">
+  <link rel="icon" href="Image/favicon.ico" type="image/png">
 
   <!-- Icona Apple Touch -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.ad34b63a.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="Image/apple-touch-icon.png">
 
   <!-- Icona per Safari su Mac OS X e iOS -->
-  <link rel="apple-touch-icon" href="/apple-touch-icon.ad34b63a.png">
+  <link rel="apple-touch-icon" href="Image/apple-touch-icon.png">
 
   <!-- Icona per Android -->
-  <link rel="icon" sizes="192x192" href="/android-chrome-192x192.c3d9747a.png">
-  <link rel="icon" sizes="512x512" href="/android-chrome-512x512.d2ea8052.png">
+  <link rel="icon" sizes="192x192" href="./Images/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="./Image/android-chrome-512x512.png">
 
   <title>Prenotazioni albergo</title>
   <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
@@ -30,30 +30,34 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
-  <link href="/index.2cdaf7bc.css" rel="stylesheet" type="text/css">
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <h1><img src="/hotel.8a35175b.svg" alt="indietro" width="75" height="175"> Prenotazioni albergo</h1>
+  <h1><img src="Icon/hotel.svg" alt="indietro" width="75" height="175"> Prenotazioni albergo</h1>
   <div class="container text-center" id="body">
-    <button class="btn btn-primary float" type="button"><img src="/salva.0703464b.svg" id="salvaModifiche" alt="avanti" width="30" height="50"></button>
+    <button class="btn btn-primary float" type="button"><img src="Icon/salva.svg" id="salvaModifiche" alt="avanti"
+        width="30" height="50"></button>
     <br>
     <div class="row align-items-center" id="buttons">
       <div class="col">
-        <button type="button" class="btn btn-primary" title="indietro" value="indietro" id="indietro" disabled=""> <img src="/indietro.cd9fa8be.svg" alt="indietro">
+        <button type="button" class="btn btn-primary" title="indietro" value="indietro" id="indietro" disabled> <img
+            src="Icon/indietro.svg" alt="indietro">
         </button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdd" title="aggiungi" value="Aggiungi" id="aggiungi"><img src="/aggiungi.628c5e54.svg" alt="aggiungi"></button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdd" title="aggiungi"
+          value="Aggiungi" id="aggiungi"><img src="Icon/aggiungi.svg" alt="aggiungi"></button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-primary" title="avanti" value="Avanti" id="avanti"><img src="/avanti.fcf1131d.svg" alt="avanti"></button>
+        <button type="button" class="btn btn-primary" title="avanti" value="Avanti" id="avanti"><img
+            src="Icon/avanti.svg" alt="avanti"></button>
       </div>
     </div>
     <br>
     <div class="row">
       <div class="card card-body">
-        <table id="calendarioPrenotazioni" class="table-custom table-hover text-white" style="width: 100%">
+        <table id="calendarioPrenotazioni" class="table-custom table-hover text-white" style="width:100%;">
           <thead id="tableHeader"></thead>
           <tbody id="tableBody" class="table-group-divider">
           </tbody>
@@ -69,8 +73,9 @@
       <div class="row">
         <!-- OffCanvas per la pagina di amministrazione -->
         <div class="col">
-          <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasAmministrazione" id="visualizzaPaginaAmministrazione">
-            <img src="/account.60caa23c.svg" alt="account">
+          <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasAmministrazione"
+            id="visualizzaPaginaAmministrazione">
+            <img src="Icon/account.svg" alt="account">
           </button>
         </div>
       </div>
@@ -101,43 +106,48 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
       </div>
       <div class="offcanvas-body">
-        <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-dark-body-tertiary p-3 rounded-2" tabindex="0">
+        <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true" class="scrollspy-example bg-dark-body-tertiary p-3 rounded-2" tabindex="0">
           <div id="gestisci" class="card text-white">
             <div class="card-header">
-              <button type="button" class="btn btn-success mt-2" data-bs-dismiss="offcanvas" id="saveModalModifiche"><img src="/cambia.d0316342.svg" alt="elimina"></button>
+              <button type="button" class="btn btn-success mt-2" data-bs-dismiss="offcanvas"
+                id="saveModalModifiche"><img src="Icon/cambia.svg" alt="elimina"></button>
             </div>
             <div class="card-body">
               <h5 class="card-title mt-1">Gestisci</h5>
               <p class="card-text">
-              </p><div class="row" id="modificaDisponibilita">
+              <div class="row" id="modificaDisponibilita">
               </div>
-              <p></p>
+              </p>
             </div>
           </div>
 
           <form method="post" action="#" onsubmit="return false">
             <div id="crea" class="card text-white">
               <div class="card-header">
-                <button type="submit" id="aggiungiStanza" class="btn btn-success mt-2" data-bs-dismiss="offcanvas"><img src="/aggiungi.628c5e54.svg" alt="aggiungi"></button>
+                <button type="submit" id="aggiungiStanza" class="btn btn-success mt-2" data-bs-dismiss="offcanvas"
+                  data-bs-dismiss="offcanvas"><img src="Icon/aggiungi.svg" alt="aggiungi"></button>
               </div>
               <div class="card-body">
                 <h5 class="card-title mt-1">Crea tipologia</h5>
                 <p class="card-text">
-                </p><div class="row" id="AggiungiStanza">
+                <div class="row" id="AggiungiStanza">
                   <div class="col">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control border-dark" placeholder=" " autofocus="" id="tipologiaStanza" required="">
+                      <input type="text" class="form-control border-dark" placeholder=" " autofocus id="tipologiaStanza"
+                        required>
                       <label for="tipologiaStanza">Tipologia di stanza</label>
                     </div>
                   </div>
                   <div class="col">
                     <div class="form-floating mb-3">
-                      <input type="number" id="numeroStanze" min="0" class="form-control border-dark" placeholder=" " required="">
+                      <input type="number" id="numeroStanze" min="0" class="form-control border-dark" placeholder=" "
+                        required>
                       <label for="numeroStanze">Numero di stanze</label>
                     </div>
                   </div>
                 </div>
-                <p></p>
+                </p>
               </div>
             </div>
           </form>
@@ -145,20 +155,22 @@
           <form method="post" action="#" onsubmit="return false">
             <div id="elimina" class="card text-white">
               <div class="card-header">
-                <button type="submit" id="confermaElimina" value="Elimina la stanza" class="btn btn-danger mt-1" data-bs-dismiss="offcanvas"><img src="/elimina.9dd1c4d3.svg" alt="elimina"></button>
+                <button type="submit" id="confermaElimina" value="Elimina la stanza" class="btn btn-danger mt-1"
+                  data-bs-dismiss="offcanvas"><img src="Icon/elimina.svg" alt="elimina"></button>
               </div>
               <div class="card-body">
                 <h5 class="card-title mt-1">Elimina stanza </h5>
                 <p class="card-text">
-                </p><div class="row" id="EliminaStanza">
+                <div class="row" id="EliminaStanza">
                   <div class="col">
                     <div class="form-floating mb-3">
-                      <input type="text" id="nomeStanzaDaEliminare" placeholder=" " autofocus="" class="form-control border-dark" required="">
+                      <input type="text" id="nomeStanzaDaEliminare" placeholder=" " autofocus
+                        class="form-control border-dark" id="nomeStanzaDaEliminare" required>
                       <label for="nomeStanzaDaEliminare">Stanza da eliminare</label>
                     </div>
                   </div>
                 </div>
-                <p></p>
+                </p>
               </div>
             </div>
           </form>
@@ -187,7 +199,7 @@
             </div>
             <br>
             <div class="form-floating">
-              <select class="form-select border-dark" id="select" placeholder=" " required=""></select>
+              <select class="form-select border-dark" id="select" placeholder=" " required></select>
               <label for="select">Tipo di stanza</label>
             </div>
             <br>
@@ -197,7 +209,8 @@
 
           <!-- Modal footer -->
           <div class="modal-footer bg-dark">
-            <button id="prossimoModal" type="button" class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal"><img src="/next.205de0f2.svg" alt="prossimo"></button>
+            <button id="prossimoModal" type="button" class="btn btn-primary" data-bs-target="#modal2"
+              data-bs-toggle="modal"><img src="Icon/next.svg" alt="prossimo"></button>
           </div>
         </div>
       </div>
@@ -217,22 +230,26 @@
             <div class="container text-center">
               <div class="row align-items-center">
                 <div class="col">
-                  <button type="button" id="modalTogli" class="btn btn-primary"><img src="/rimuovi.5b83b9c7.svg" alt="rimuovi"></button>
+                  <button type="button" id="modalTogli" class="btn btn-primary"><img src="Icon/rimuovi.svg"
+                      alt="rimuovi"></button>
                 </div>
                 <div class="col">
                   <p class="font" id="numeri"></p>
                 </div>
-                <div class="col"><button type="button" id="modalAggiungi" class="btn btn-primary"><img src="/aggiungi.628c5e54.svg" alt="aggiungi"></button></div>
+                <div class="col"><button type="button" id="modalAggiungi" class="btn btn-primary"><img
+                      src="Icon/aggiungi.svg" alt="aggiungi"></button></div>
               </div>
             </div>
           </div>
           <div class="modal-footer bg-dark">
             <div class="row justify-content-end">
               <div class="col">
-                <button class="btn btn-primary" id="modalIndietro" data-bs-target="#modalAdd" data-bs-toggle="modal"><img src="/back.8a7a93f3.svg" alt="indietro"></button>
+                <button class="btn btn-primary" id="modalIndietro" data-bs-target="#modalAdd"
+                  data-bs-toggle="modal"><img src="Icon/back.svg" alt="indietro"></button>
               </div>
               <div class="col">
-                <button class="btn btn-primary" data-bs-dismiss="modal" id="ModalSet"><img src="/fatto.04cea7dc.svg" alt="aggiungi"></button>
+                <button class="btn btn-primary" data-bs-dismiss="modal" id="ModalSet"><img src="Icon/fatto.svg"
+                    alt="aggiungi"></button>
               </div>
             </div>
           </div>
@@ -257,10 +274,12 @@
             <div class="container text-center">
               <div class="row align-items-center">
                 <div class="col">
-                  <button type="button" class="btn btn-primary" id="noSaveModal" data-bs-dismiss="modal"><img src="/cancella.b1d0213c.svg" alt="aggiungi"></button>
+                  <button type="button" class="btn btn-primary" id="noSaveModal" data-bs-dismiss="modal"><img
+                      src="Icon/cancella.svg" alt="aggiungi"></button>
                 </div>
                 <div class="col">
-                  <button type="button" class="btn btn-primary" id="saveModal" data-bs-dismiss="modal"><img src="/salva.0703464b.svg" alt="aggiungi"></button>
+                  <button type="button" class="btn btn-primary" id="saveModal" data-bs-dismiss="modal"><img
+                      src="Icon/salva.svg" alt="aggiungi"></button>
                 </div>
               </div>
             </div>
@@ -272,7 +291,7 @@
         </div>
       </div>
     </div>
-    <script src="/index.f5c48570.js" defer=""></script>
-</div></body>
+    <script src="src/script.js" type="module"></script>
+</body>
 
 </html>
